@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GuixSoftArt Web Tools - herramientas web gratuitas y de código abierto.">
+    <title>GuixSoftArt Web Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>GuixSoftArt Web Tools</h1>
+            <p>Herramientas web sencillas, gratuitas y de código abierto.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="tool">
+            <h2>📝 Analizador de texto</h2>
+            <textarea id="textInput" placeholder="Escribe o pega tu texto aquí..."></textarea>
+
+            <div class="stats">
+                <div>
+                    <strong id="characters">0</strong>
+                    <span>Caracteres</span>
+                </div>
+                <div>
+                    <strong id="words">0</strong>
+                    <span>Palabras</span>
+                </div>
+                <div>
+                    <strong id="lines">0</strong>
+                    <span>Líneas</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="tool">
+            <h2>🔐 Generador de contraseñas</h2>
+
+            <div class="password-result">
+                <input id="password" type="text" readonly>
+                <button id="copyPassword">Copiar</button>
+            </div>
+
+            <label for="length">Longitud: <strong id="lengthValue">16</strong></label>
+            <input id="length" type="range" min="8" max="40" value="16">
+
+            <button id="generatePassword" class="primary">
+                Generar contraseña
+            </button>
+        </section>
+
+        <section class="tool">
+            <h2>🎨 Generador de colores</h2>
+
+            <div class="color-preview" id="colorPreview"></div>
+
+            <div class="color-controls">
+                <input id="colorPicker" type="color" value="#6366f1">
+                <input id="hexColor" type="text" value="#6366f1" maxlength="7">
+                <button id="copyColor">Copiar color</button>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>Sobre el proyecto</h2>
+            <p>
+                GuixSoftArt Web Tools es un proyecto independiente de código abierto
+                creado para ofrecer pequeñas herramientas útiles directamente desde
+                el navegador.
+            </p>
+            <p>
+                No requiere instalación ni servidor y las herramientas funcionan
+                localmente en el navegador del usuario.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>GuixSoftArt Web Tools · Código abierto · 2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
