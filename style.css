@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #1f2937;
+}
+
+header {
+    background: #111827;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 12px;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0;
+    color: #d1d5db;
+}
+
+.container {
+    width: min(100% - 32px, 900px);
+    margin: auto;
+}
+
+main {
+    padding: 35px 0;
+}
+
+.tool,
+.about {
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+textarea {
+    width: 100%;
+    min-height: 180px;
+    resize: vertical;
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font: inherit;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.stats div {
+    padding: 18px;
+    text-align: center;
+    background: #f3f4f6;
+    border-radius: 10px;
+}
+
+.stats strong,
+.stats span {
+    display: block;
+}
+
+.stats strong {
+    font-size: 1.6rem;
+}
+
+.stats span {
+    margin-top: 5px;
+    color: #6b7280;
+}
+
+.password-result {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.password-result input {
+    flex: 1;
+}
+
+input[type="text"] {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font: inherit;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 15px 0;
+}
+
+button {
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-weight: bold;
+    background: #e5e7eb;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.primary {
+    background: #4f46e5;
+    color: white;
+}
+
+.color-preview {
+    height: 130px;
+    border-radius: 12px;
+    background: #6366f1;
+    margin-bottom: 20px;
+}
+
+.color-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.color-controls input[type="color"] {
+    width: 55px;
+    height: 45px;
+    border: 0;
+    padding: 0;
+}
+
+.color-controls input[type="text"] {
+    flex: 1;
+}
+
+.about {
+    line-height: 1.7;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #6b7280;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .password-result,
+    .color-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .color-controls input[type="color"] {
+        width: 100%;
+    }
+}
